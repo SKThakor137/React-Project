@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background: #001e4d;
+}
+.app {
+  width: 90%;
+  max-width: 600px;
+  background: #fff;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.app h2 {
+  font-size: 25px;
+  color: #001e4d;
+  font-weight: 600;
+  padding-bottom: 30px;
+  /* border-bottom: 1px solid #001e4d; */
+}
+
+.quiz {
+  padding: 20px 0;
+}
+.quiz h2 {
+  font-size: 18px;
+  color: #001e4d;
+  font-weight: 600;
+}
+
+.btn {
+  background: #fff;
+  color: #222;
+  width: 100%;
+  font-weight: 500;
+  border: 1px solid rgb(183, 180, 180);
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btn:hover:not([disabled]) {
+  background: #222;
+  color: #fff;
+}
+.btn:disabled {
+  cursor: no-drop;
+}
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color: #fff; */
+}
+#next-btn {
+  background: #001e4d;
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+  font-weight: bold;
+}
+#next-btn:hover:not([disabled]) {
+  box-shadow: 2px 0px 10px #001e4d;
+}
+#next-btn:disabled {
+  font-weight: bold;
+  opacity: 0.4;
+  cursor: no-drop;
+}
+.correct {
+  background: #dffff2;
+  border: 1px solid #35f6a9;
+  /* background: #9aeabc; */
+}
+.incorrect {
+  background: #ffebeb;
+  border: 1px solid #ee7a7a;
+  /* background: #ff9393; */
+}
+h4 {
+  margin-top: 20px;
+}
+.index {
+  text-align: center;
+  margin-top: 16px;
+}
