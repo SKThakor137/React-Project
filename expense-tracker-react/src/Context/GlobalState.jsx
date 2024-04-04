@@ -1,4 +1,5 @@
 import { createContext, useReducer } from "react";
+import PropTypes from "prop-types";
 import AppReducer from "./AppReducer";
 
 // initialize
@@ -15,6 +16,7 @@ const initialState = {
 export const GlobalContext = createContext(initialState);
 
 export const GlobalProvider = ({ children }) => {
+  console.log(typeof children);
   const [state, dispatch] = useReducer(AppReducer, initialState);
 
   // Action
@@ -31,6 +33,10 @@ export const GlobalProvider = ({ children }) => {
       payload: transaction,
     });
   }
+
+  GlobalProvider.propTypes = {
+    children: PropTypes.object.isRequired,
+  };
 
   return (
     <GlobalContext.Provider
