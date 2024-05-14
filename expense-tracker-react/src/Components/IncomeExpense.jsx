@@ -3,7 +3,7 @@ import { GlobalContext } from "../Context/GlobalState";
 
 const IncomeExpense = () => {
   const { transactions } = useContext(GlobalContext);
-
+// console.log(transactions)
   const amounts = transactions.map((transactions) => transactions.amount);
 
   const income = amounts
@@ -37,3 +37,4 @@ const IncomeExpense = () => {
 };
 
 export default IncomeExpense;
+

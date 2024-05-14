@@ -5,6 +5,7 @@ import Transaction from "./Transaction";
 const ExpenseList = () => {
   // const context = useContext(GlobalContext)
   const { transactions } = useContext(GlobalContext);
+  // console.log(transactions)
   return (
     <>
       <h3>History</h3>
